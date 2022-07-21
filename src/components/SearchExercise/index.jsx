@@ -3,7 +3,7 @@ import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 
 import {
   EXERCISE_BODY_PART_URL,
-  EXERCISE_SEARCH_URL,
+  EXERCISE_BASE_URL,
 } from '../../helpers/API/ExerciseAPI';
 
 import { exerciseOptions, fetchData } from '../../utils/fetchData';
@@ -28,10 +28,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   const handleSearch = async () => {
     if (search) {
-      const exercisesData = await fetchData(
-        EXERCISE_SEARCH_URL,
-        exerciseOptions
-      );
+      const exercisesData = await fetchData(EXERCISE_BASE_URL, exerciseOptions);
 
       const searchedExercises = exercisesData.filter(
         (item) =>

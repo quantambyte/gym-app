@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from '@mui/material';
 
 const Footer = () => (
-  <Box mt='80px' bgcolor='#FFF3F4'>
+  <Box mt='80px' bgcolor='#FFF3F4' style={{ paddingBottom: '70px' }}>
     <Stack
       gap='40px'
       sx={{ alignItems: 'center' }}
@@ -22,7 +22,18 @@ const Footer = () => (
       textAlign='center'
       pb='40px'
     >
-      Made with ❤️ by JavaScript Mastery
+      Made with 🖤 by{' '}
+      <a href='https://github.com/uzair-asif' target='_blank' rel='noreferrer'>
+        Uzair Asif
+      </a>
+      by the help of{' '}
+      <a
+        href='https://www.youtube.com/c/JavaScriptMastery'
+        target='_blank'
+        rel='noreferrer'
+      >
+        JavaScript Mastery
+      </a>
     </Typography>
   </Box>
 );

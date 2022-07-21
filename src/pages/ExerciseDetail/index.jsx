@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 import { Detail, ExerciseVideos, SimilarExercises } from '../../components';
 
 import { YOUTUBE_API_URL } from '../../helpers/API/YoutubeSearchAPI';
-import { EXERCISE_BASE_URL } from '../../helpers/API/ExerciseAPI';
+import { EXERCISE_URL } from '../../helpers/API/ExerciseAPI';
 
 import {
   exerciseOptions,
@@ -25,7 +25,7 @@ const ExerciseDetail = () => {
 
     const fetchExercisesData = async () => {
       const exerciseDetailData = await fetchData(
-        `${EXERCISE_BASE_URL}/exercises/exercise/${id}`,
+        `${EXERCISE_URL}/exercises/exercise/${id}`,
         exerciseOptions
       );
       setExerciseDetail(exerciseDetailData);
@@ -37,13 +37,13 @@ const ExerciseDetail = () => {
       setExerciseVideos(exerciseVideosData.contents);
 
       const targetMuscleExercisesData = await fetchData(
-        `${EXERCISE_BASE_URL}/exercises/target/${exerciseDetailData.target}`,
+        `${EXERCISE_URL}/exercises/target/${exerciseDetailData.target}`,
         exerciseOptions
       );
       setTargetMuscleExercises(targetMuscleExercisesData);
 
       const equipmentExercisesData = await fetchData(
-        `${EXERCISE_BASE_URL}/exercises/equipment/${exerciseDetailData.equipment}`,
+        `${EXERCISE_URL}/exercises/equipment/${exerciseDetailData.equipment}`,
         exerciseOptions
       );
       setEquipmentExercises(equipmentExercisesData);
