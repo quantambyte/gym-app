@@ -1,5 +1,8 @@
 # Fitness App
 
+# Site is live at `https://gymming.netlify.app`
+
+
 ## Steps to Run the Application
 
 1. If there is an error while installing packages please use `npm install --peer-legacy-deps`
