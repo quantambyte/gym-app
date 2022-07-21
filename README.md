@@ -1,6 +1,6 @@
 # Fitness App
 
-# Site is live at `https://gymming.netlify.app`
+# Site is live at [https://gymming.netlify.app]
 
 
 ## Steps to Run the Application
