@@ -1,5 +1,5 @@
 import { Stack } from '@mui/material';
-import { InfinitySpin } from 'react-loader-spinner';
+import { Hearts } from 'react-loader-spinner';
 
 const Loader = () => (
   <Stack
@@ -8,7 +8,7 @@ const Loader = () => (
     alignItems='center'
     width='100%'
   >
-    <InfinitySpin color='grey' />
+    <Hearts color='grey' />
   </Stack>
 );
 

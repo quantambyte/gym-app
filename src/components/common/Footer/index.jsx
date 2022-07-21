@@ -24,7 +24,7 @@ const Footer = () => (
     >
       Made with 🖤 by{' '}
       <a href='https://github.com/uzair-asif' target='_blank' rel='noreferrer'>
-        Uzair Asif
+        Uzair Asif{'    '}
       </a>
       by the help of{' '}
       <a
